@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title AJAX-Login
+        link(rel="stylesheet", href="css/all.css")
+    body
+        .banner
+            .container.wrap.d-flex.justify-content-center.align-items-center.flex-column
+                .row
+                    .col-md-6.py-2
+                        form.formPost.text-white
+                            h4 POST Model
+                            .form-group
+                                label(for='emailPost') Email
+                                input#emailPost.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                            .form-group
+                                label(for='passwdPost') Password
+                                input#passwdPost.form-control(type='password', placeholder='Password')
+                            button#sendPost.btn.btn-primary.btn-block(type='submit') 註冊
+                            button#sendPostLogin.btn.btn-primary.btn-block(type='submit') 登入
+                    .col-md-6.py-2
+                        form.formJSON.text-white
+                            h4 JSON Model
+                            .form-group
+                                label(for='emailJSON') Email
+                                input#emailJSON.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                            .form-group
+                                label(for='passwdJSON') Password
+                                input#passwdJSON.form-control(type='password', placeholder='Password')
+                            button#sendJSON.btn.btn-primary.btn-block(type='submit') 註冊
+                            button#sendJSONLogin.btn.btn-primary.btn-block(type='submit') 登入
+                    .col-md-12.text-white.py-2
+                        .resultList
+                            h3 Status
+                            p
+                            | 此測試頁面採用六角學院登入API(此範例僅供練習，並不會儲存用戶資料至資料庫(僅緩存))，API來源:
+                            a(href="https://github.com/hexschool/nodejs_ajax_tutorial") 資料來源
+
+        script(src="js/all.js")

@@ -1,0 +1,15 @@
+@import "functions";
+@import "variables";
+@import "bootstrap";
+
+.banner{
+    background-image: url('../images/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrap{
+    height: 100vh;
+    background-color: $black;
+    opacity: 0.8;
+}
