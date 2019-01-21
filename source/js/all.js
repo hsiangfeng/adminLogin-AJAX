@@ -75,7 +75,7 @@ function XHRCall(lineModel, url, header, sendStr, modelText) {
 function resultListFu(item, model) {
     let resultStr = document.createElement('p');
     let date = new Date;
-    let nowDateTime = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+    let nowDateTime = `${date.getFullYear()}/${(date.getMonth() + 1)}/${date.getDate()}-${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
     switch (true) {
         case item.message == '帳號註冊成功':
             resultStr.textContent = `帳號註冊成功 - 您現在使用${model}模式 - 時間：${nowDateTime}`;
